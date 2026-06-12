@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Software Engineer",
+    "skills": ["JavaScript", "TypeScript", "React", "Node.js", "Python", "AWS", "Docker", "PostgreSQL", "MongoDB", "GraphQL"],
+    "experience_years": 7,
+    "education": "Bachelor's in Computer Science",
+    "summary": "Senior Software Engineer with 7+ years of experience building scalable web applications. Proficient in React, Node.js, and cloud technologies."
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "skills": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "SQL", "Tableau", "Statistical Analysis", "Machine Learning"],
+    "experience_years": 5,
+    "education": "Master's in Data Science",
+    "summary": "Data Scientist with expertise in machine learning, deep learning, and statistical modeling. Experienced in building production ML pipelines."
+  },
+  {
+    "id": 3,
+    "title": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Vue.js", "Tailwind CSS", "Webpack", "Jest", "REST APIs"],
+    "experience_years": 4,
+    "education": "Bachelor's in Computer Science",
+    "summary": "Frontend Developer specializing in React and Vue.js with a passion for creating intuitive user interfaces and responsive designs."
+  },
+  {
+    "id": 4,
+    "title": "DevOps Engineer",
+    "skills": ["Docker", "Kubernetes", "AWS", "Terraform", "Ansible", "Jenkins", "Linux", "Bash", "CI/CD", "Monitoring"],
+    "experience_years": 6,
+    "education": "Bachelor's in Information Technology",
+    "summary": "DevOps Engineer with expertise in containerization, cloud infrastructure, and automation. Experienced in managing production systems."
+  },
+  {
+    "id": 5,
+    "title": "Product Manager",
+    "skills": ["Product Strategy", "User Research", "A/B Testing", "Agile", "Scrum", "Jira", "Data Analysis", "Stakeholder Management", "Roadmapping", "SQL"],
+    "experience_years": 8,
+    "education": "MBA",
+    "summary": "Product Manager with 8+ years leading cross-functional teams to deliver user-centric products. Skilled in strategy, execution, and analytics."
+  },
+  {
+    "id": 6,
+    "title": "Full Stack Developer",
+    "skills": ["JavaScript", "React", "Node.js", "Python", "Django", "PostgreSQL", "MongoDB", "Docker", "Git", "REST APIs"],
+    "experience_years": 5,
+    "education": "Bachelor's in Computer Engineering",
+    "summary": "Full Stack Developer skilled in React, Node.js, and Python. Built and deployed multiple web applications from concept to production."
+  },
+  {
+    "id": 7,
+    "title": "Machine Learning Engineer",
+    "skills": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "MLflow", "Kubernetes", "AWS SageMaker", "Feature Engineering", "NLP", "Computer Vision"],
+    "experience_years": 4,
+    "education": "Master's in AI",
+    "summary": "ML Engineer experienced in designing and deploying machine learning models at scale. Expertise in NLP and computer vision applications."
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Analyst",
+    "skills": ["Network Security", "Penetration Testing", "SIEM", "Firewalls", "Python", "Bash", "Vulnerability Assessment", "Incident Response", "Compliance"],
+    "experience_years": 5,
+    "education": "Bachelor's in Cybersecurity",
+    "summary": "Cybersecurity Analyst skilled in threat detection, vulnerability assessment, and incident response. Certified in CEH and CISSP."
+  }
+]

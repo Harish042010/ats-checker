@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Software Engineer - Full Stack",
+    "company": "TechCorp",
+    "skills_required": ["JavaScript", "TypeScript", "React", "Node.js", "Python", "AWS", "Docker", "PostgreSQL", "MongoDB", "GraphQL", "CI/CD"],
+    "skills_preferred": ["Kubernetes", "Terraform", "Go", "Redis"],
+    "experience_required": "5+ years",
+    "education_required": "Bachelor's in Computer Science or related field",
+    "description": "We are looking for a Senior Software Engineer to join our team. You will be building and scaling our SaaS platform using React, Node.js, and AWS. Experience with microservices and containerization is required."
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist - NLP Specialist",
+    "company": "AILabs",
+    "skills_required": ["Python", "TensorFlow", "PyTorch", "NLP", "Machine Learning", "SQL", "Pandas", "NumPy", "Transformers"],
+    "skills_preferred": ["BERT", "GPT", "LangChain", "Vector Databases", "MLflow"],
+    "experience_required": "3+ years",
+    "education_required": "Master's or PhD in Computer Science, Data Science, or related field",
+    "description": "Join our NLP team to build state-of-the-art language models. You will work on text classification, entity extraction, and generative AI applications."
+  },
+  {
+    "id": 3,
+    "title": "Frontend Engineer - React",
+    "company": "WebStudio",
+    "skills_required": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Jest", "REST APIs", "Git"],
+    "skills_preferred": ["GraphQL", "Storybook", "Cypress", "Figma", "Webpack"],
+    "experience_required": "3+ years",
+    "education_required": "Bachelor's degree",
+    "description": "Looking for a Frontend Engineer with strong React skills to build beautiful, performant user interfaces. You will work closely with designers and backend engineers."
+  },
+  {
+    "id": 4,
+    "title": "DevOps / Platform Engineer",
+    "company": "CloudScale",
+    "skills_required": ["Docker", "Kubernetes", "AWS", "Terraform", "Ansible", "Jenkins", "Linux", "Bash", "CI/CD", "Monitoring"],
+    "skills_preferred": ["Helm", "Istio", "Prometheus", "Grafana", "Python"],
+    "experience_required": "4+ years",
+    "education_required": "Bachelor's degree in CS or related",
+    "description": "We need a Platform Engineer to build and maintain our cloud infrastructure. You will design CI/CD pipelines, manage Kubernetes clusters, and ensure system reliability."
+  },
+  {
+    "id": 5,
+    "title": "Product Manager - SaaS",
+    "company": "GrowthInc",
+    "skills_required": ["Product Strategy", "User Research", "A/B Testing", "Agile", "Scrum", "Data Analysis", "Stakeholder Management", "Roadmapping"],
+    "skills_preferred": ["SQL", "Mixpanel", "Amplitude", "Figma", "Jira"],
+    "experience_required": "5+ years",
+    "education_required": "MBA or equivalent experience",
+    "description": "Lead product strategy for our B2B SaaS platform. You will define roadmap, conduct user research, and work with engineering to deliver features."
+  },
+  {
+    "id": 6,
+    "title": "Junior Full Stack Developer",
+    "company": "StartupXYZ",
+    "skills_required": ["JavaScript", "React", "Node.js", "Express", "MongoDB", "Git", "REST APIs", "HTML", "CSS"],
+    "skills_preferred": ["TypeScript", "PostgreSQL", "Docker", "AWS"],
+    "experience_required": "1+ years",
+    "education_required": "Bachelor's degree or bootcamp graduate",
+    "description": "Join our fast-growing startup as a Full Stack Developer. You will work on both frontend and backend features using React and Node.js."
+  },
+  {
+    "id": 7,
+    "title": "ML Engineer - Computer Vision",
+    "company": "VisionAI",
+    "skills_required": ["Python", "PyTorch", "Computer Vision", "OpenCV", "Deep Learning", "TensorFlow", "Image Processing", "NumPy"],
+    "skills_preferred": ["ONNX", "TensorRT", "Docker", "Kubernetes", "AWS"],
+    "experience_required": "3+ years",
+    "education_required": "MS/PhD in Computer Science or related",
+    "description": "Develop computer vision models for object detection, segmentation, and tracking. Deploy models to production using PyTorch and ONNX."
+  },
+  {
+    "id": 8,
+    "title": "Security Engineer",
+    "company": "SecureTech",
+    "skills_required": ["Network Security", "Penetration Testing", "SIEM", "Python", "Bash", "Vulnerability Assessment", "Incident Response", "Cloud Security"],
+    "skills_preferred": ["AWS Security", "Kubernetes Security", "CISSP", "CEH", "SOC2"],
+    "experience_required": "4+ years",
+    "education_required": "Bachelor's degree",
+    "description": "Protect our infrastructure and applications. Conduct security assessments, implement security controls, and respond to incidents."
+  }
+]

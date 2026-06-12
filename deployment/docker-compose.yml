@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../deployment/backend.Dockerfile
+    ports:
+      - "5000:5000"
+    env_file:
+      - ../backend/.env
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=${MONGODB_URI}
+      - JWT_SECRET=${JWT_SECRET}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME}
+      - CLOUDINARY_API_KEY=${CLOUDINARY_API_KEY}
+      - CLOUDINARY_API_SECRET=${CLOUDINARY_API_SECRET}
+    volumes:
+      - ../backend/uploads:/app/uploads
+    restart: unless-stopped
+    networks:
+      - resumelens-network
+
+  ml-service:
+    build:
+      context: ../ml-service
+      dockerfile: ../deployment/ml.Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+    volumes:
+      - ../ml-service/models:/app/models
+      - ../ml-service/datasets:/app/datasets
+    restart: unless-stopped
+    networks:
+      - resumelens-network
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: ../deployment/frontend.Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      - VITE_API_URL=http://backend:5000/api
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - resumelens-network
+
+networks:
+  resumelens-network:
+    driver: bridge
