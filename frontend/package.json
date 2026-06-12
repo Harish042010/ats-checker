@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext js,jsx"
+    "lint": "eslint . --ext js,jsx",
+    "postinstall": "chmod +x node_modules/.bin/vite 2>/dev/null || true"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
