@@ -4,8 +4,9 @@ services:
     env: node
     region: oregon
     plan: starter
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && node server.js
+    buildCommand: npm install
+    startCommand: node server.js
+    buildContext: backend
     envVars:
       - key: NODE_ENV
         value: production
@@ -29,10 +30,9 @@ services:
     env: python
     region: oregon
     plan: starter
-    buildCommand: cd ml-service && python -m pip install --upgrade pip setuptools wheel && pip install --prefer-binary -r requirements.txt
-    startCommand: cd ml-service && gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 120 app:app
+    buildCommand: pip install --upgrade pip setuptools wheel && pip install --prefer-binary -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 120 app:app
+    buildContext: ml-service
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.9
       - key: PORT
         value: 5001
