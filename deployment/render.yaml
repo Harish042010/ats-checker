@@ -12,6 +12,10 @@ services:
         value: production
       - key: PORT
         value: 5000
+      - key: CORS_ORIGIN
+        value: https://ats-checker-2-40mp.onrender.com
+      - key: ML_SERVICE_URL
+        value: https://ats-checker-p7ku.onrender.com/api
       - key: MONGODB_URI
         sync: false
       - key: JWT_SECRET
@@ -36,3 +40,18 @@ services:
     envVars:
       - key: PORT
         value: 5001
+
+  - type: static
+    name: resumelens-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: frontend/dist
+    buildContext: frontend
+    envVars:
+      - key: VITE_API_URL
+        value: https://ats-checker-1-o87l.onrender.com/api
+      - key: VITE_ML_API_URL
+        value: https://ats-checker-p7ku.onrender.com/api
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
